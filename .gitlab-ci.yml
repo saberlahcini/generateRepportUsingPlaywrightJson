@@ -7,4 +7,6 @@ run_project:
   stage: test
   script:
     - npm ci
-    - npm run dev
+    - npx playwright install --with-deps chromium
+    - npx playwright test
+    - node Apis/telegramApis.js
