@@ -2,6 +2,9 @@ import axios from "axios";
 import FormData from "form-data";
 import dotenv from "dotenv";
 import fs from "fs";
+import path from "path";
+
+
 
 
 
@@ -12,9 +15,9 @@ const TELEGRAM_API_URL = "https://api.telegram.org/bot";
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const chatId = process.env.CHAT_ID;
 const baseUrl = `${TELEGRAM_API_URL}${TELEGRAM_BOT_TOKEN}/`;
-const htmlFile = String.raw`C:\Users\HP\testbot\test.html`;
 
 
+const htmlFile = path.join(__dirname, '..', 'test.html');
 
 
 const telegramApi = axios.create({
