@@ -1,0 +1,14 @@
+{
+  "name": "testbot",
+  "version": "1.0.0",
+  "description": "<!--\r Update this readme with your component details. Replace content in `< >` with your project information.\r For more information:",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5"
+  }
+}
