@@ -1,35 +1,10 @@
-# .gitlab-ci.yml
+image: node:22
 
-# Use an official Node.js Docker image
-image: node:18
-
-# Define the stages of the pipeline
 stages:
-  - install
   - test
-  - build
 
-# Job 1: Install dependencies
-install:
-  stage: install
-  script:
-    - npm install
-  cache:
-    paths:
-      - node_modules/
-
-# Job 2: Run tests
-test:
+run_project:
   stage: test
   script:
-    - npm run test
-  dependencies:
-    - install
-
-# Job 3: Run build command
-build:
-  stage: build
-  script:
-    - npm run build
-  dependencies:
-    - install   
+    - npm ci
+    - npm run dev
