@@ -63,5 +63,5 @@ const sendDocument = async (filePath) => {
 }
 
 
- await sendMessage("hi bot cv how are you?");
+ await sendMessage("hi bot cv  this is a test message from my bot");
  await sendDocument(htmlFile);
