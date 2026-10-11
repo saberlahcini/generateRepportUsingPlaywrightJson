@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "<!--\r Update this readme with your component details. Replace content in `< >` with your project information.\r For more information:",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev" : "node c:\\Users\\HP\\testbot\\Apis\\telegramApis.js"
+  },
   "keywords": [],
   "author": "",
   "type": "module",
