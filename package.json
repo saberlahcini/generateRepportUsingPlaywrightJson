@@ -4,7 +4,17 @@
   "description": "<!--\r Update this readme with your component details. Replace content in `< >` with your project information.\r For more information:",
   "main": "index.js",
   "scripts": {
-    "dev": "node Apis/telegramApis.js"
+    "dev": "playwright test --headed && node Apis/telegramApis.js ",
+    "test": "playwright test --headed",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:report:open": "playwright show-report --open",
+    "test:report:html": "playwright show-report --reporter=html",
+    "test:report:json": "playwright show-report --reporter=json",
+    "test:report:json:open": "playwright show-report --reporter=json --open",
+    "test:report:json:html": "playwright show-report --reporter=json --reporter=html",
+    "test:report:json:html:open": "playwright show-report --reporter=json --reporter=html --open"
 },
   "keywords": [],
   "author": "",

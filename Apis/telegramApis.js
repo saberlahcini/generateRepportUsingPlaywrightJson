@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const htmlFile = path.join(__dirname, "..", "test.html");
 
+const playwrightReportPath = path.join(__dirname, "..", "playwright-report", "index.html");
 
 
 dotenv.config();
@@ -63,5 +64,5 @@ const sendDocument = async (filePath) => {
 }
 
 
- await sendMessage("hi bot cv  this is a test message from my bot");
- await sendDocument(htmlFile);
+ await sendMessage("hi bot cv  this ");
+ await sendDocument(playwrightReportPath);
