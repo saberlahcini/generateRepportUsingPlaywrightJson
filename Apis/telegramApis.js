@@ -2,9 +2,13 @@ import axios from "axios";
 import FormData from "form-data";
 import dotenv from "dotenv";
 import fs from "fs";
-import path from "path";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
+const htmlFile = path.join(__dirname, "..", "test.html");
 
 
 
@@ -17,7 +21,7 @@ const chatId = process.env.CHAT_ID;
 const baseUrl = `${TELEGRAM_API_URL}${TELEGRAM_BOT_TOKEN}/`;
 
 
-const htmlFile = path.join(__dirname, '..', 'test.html');
+
 
 
 const telegramApi = axios.create({
