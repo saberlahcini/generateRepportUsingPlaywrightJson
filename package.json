@@ -14,7 +14,8 @@
     "test:report:json": "playwright show-report --reporter=json",
     "test:report:json:open": "playwright show-report --reporter=json --open",
     "test:report:json:html": "playwright show-report --reporter=json --reporter=html",
-    "test:report:json:html:open": "playwright show-report --reporter=json --reporter=html --open"
+    "test:report:json:html:open": "playwright show-report --reporter=json --reporter=html --open",
+    "test:advanced": "playwright test --headed && node generteRepport/advanceRepport.js && node Apis/telegramApis.js"
 },
   "keywords": [],
   "author": "",

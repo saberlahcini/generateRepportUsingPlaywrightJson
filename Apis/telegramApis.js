@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const htmlFile = path.join(__dirname, "..", "test.html");
 
-const playwrightReportPath = path.join(__dirname, "..", "playwright-report", "index.html");
+const playwrightReportPath = path.join(__dirname, "..", "advanced-report", "index.html");
 
 
 dotenv.config();
