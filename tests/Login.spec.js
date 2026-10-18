@@ -99,7 +99,7 @@ test('test', async ({ page }) => {
   await humanClick(page, email, 'email (2nd)');
   await humanFill(page, email, '', 'email empty');
 
-  await humanClick(page, page.getByText('Password I forgot my password'), 'forgot password text');
+  await humanClick(page, page.getByText('Passwo rd I forgot my password'), 'forgot password text');
 
   await humanFill(page, password, 'sasasas', 'password');
   await humanFill(page, email, 'sasasassaasassa', 'email wrong');
